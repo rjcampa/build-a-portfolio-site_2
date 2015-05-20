@@ -1,0 +1,71 @@
+body {
+	font-family: 'Lato', sans-serif;
+	color: #747704;
+	font-weight: 300;
+}
+
+.text-muted {
+	color: #bcbbbb;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+.title-super {
+	font-size: 50px;
+}
+
+.title-logo {
+	margin-top: 20px;
+}
+
+/* this is a catch-all to prevent overflow */
+img, embed, object, video {
+	max-width: 100%;
+}
+
+/* Shrink major fonts for smaller devices; Nexus 5.
+This is to prevent text from 'overpowering' the images on smaller
+devices*/
+@media screen and (max-width: 640px) {
+	.text-muted {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.title-super {
+		font-size: 24px;
+	}
+
+	.sub-title {
+		font-size: 12px;
+	}
+
+	h3 {
+		font-size: 1.2em;
+	}
+
+	.title-super, .sub-title {
+		width: 100%;
+		text-align: center;
+	}
+
+}	
+
+/* Tablets; iPad. This breakpoint helps smooth the transition 
+from mobile to tablet sizes.*/
+@media screen and (min-width: 641px) and (max-width: 767px) {
+	.text-muted {
+		text-align: center;
+		font-size: 20px;
+	}
+
+	.title-super {
+		font-size: 25px;
+	}
+
+	.sub-title {
+		font-size: 12px;
+	}
+}
